@@ -1,7 +1,10 @@
 import './main.scss'
 import VirtualDom from '@/index'
+import logInfo from './utils/log-info'
 
-const tree = new VirtualDom({
+logInfo()
+
+const oldDom = {
   tag: 'div', // 0
   children: [
     {
@@ -18,19 +21,23 @@ const tree = new VirtualDom({
       children: [
         {
           tag: 'p', // 3
+          className: 'p1',
           text: 'too young'
         },
         {
           tag: 'p', // 4
+          className: 'p2',
           text: 'too simple'
         },
         {
           tag: 'p', // 5
+          className: 'p3',
           style: 'color: #f36b6b;',
           text: '+1s +1s +1s'
         },
         {
           tag: 'p', // 6
+          className: 'p4',
           text: 'some time nativeeee'
         }
       ]
@@ -40,19 +47,15 @@ const tree = new VirtualDom({
       text: '@power by hwen <hwenleung@gmail.com>'
     }
   ]
-})
+}
 
-const $dom = tree.render()
-const $app = document.querySelector('#app')
-$app.replaceWith($dom)
-
-tree.update($dom, {
+const newDom = {
   tag: 'div',
   children: [
     {
       tag: 'h1',
       className: 'header',
-      style: 'color: blue; padding-left: 16px;',
+      style: 'color: #7d7df1; padding-left: 16px;',
       text: 'Hii ~'
     },
     {
@@ -63,10 +66,12 @@ tree.update($dom, {
       children: [
         {
           tag: 'p',
+          className: 'p1',
           text: 'too young'
         },
         {
           tag: 'p',
+          className: 'p2',
           text: 'some time nativeeee'
         }
       ]
@@ -78,7 +83,14 @@ tree.update($dom, {
     },
     {
       style: 'color: #606c76;  padding-left: 16px;',
-      text: '============= (○´･д･)ﾉ 暴力膜不可取 ============='
+      text: '== (○´･д･)ﾉ 暴力膜不可取 =='
     }
   ]
-})
+}
+
+const tree = new VirtualDom(oldDom)
+const $dom = tree.render()
+const $app = document.querySelector('#app')
+$app.replaceWith($dom)
+
+tree.update($dom, newDom)

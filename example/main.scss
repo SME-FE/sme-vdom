@@ -4,5 +4,38 @@
 html, body {
   color: $blackText;
   height: 100%;
+  font-family: "Microsoft YaHei",'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, rgb(185, 147, 214), rgb(140, 166, 219));
+}
+
+.main-container {
+  margin-top: 25px;
+  display: flex;
+  color: #8ca6db;
+  &>div {
+    flex: 1;
+    box-sizing: border-box;
+    margin: 25px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+  }
+  .title {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    color: #8ca6db;
+    // background: linear-gradient(to right, rgb(185, 147, 214), rgb(140, 166, 219));
+    // border-radius: 8px;
+    border-left: 2px dashed #8ca6db;
+    border-bottom: 2px dashed #8ca6db;
+    font-weight: bold;
+  }
 }
 
