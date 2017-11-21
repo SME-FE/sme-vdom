@@ -16,7 +16,9 @@ export default class VirtualDom {
 
   update ($dom, newVirtualDom) {
     const patches = diff(this.element, new Element(newVirtualDom))
-    console.log(patches)
+    if (process.env.NODE_ENV === 'debug') {
+      console.log(patches)
+    }
     patch($dom, patches)
   }
 }

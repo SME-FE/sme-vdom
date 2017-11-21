@@ -30,7 +30,7 @@ const typeDescription = {
 const updateWalkInfo = ($node, type) => {
   const info = `=>  ${$node.nodeName}.${$node.className} do ${typeDescription[type]}`
   logSome(info)
-  if (!window._walkInfo) window._walkInfo = '=>  start ε=ε=ε=(~￣▽￣)~'
+  if (!window._walkInfo) window._walkInfo = '=>  <(￣︶￣)↗[GO!] \n => see [console] for more detail'
   window._walkInfo += `\n${info}`
 }
 
