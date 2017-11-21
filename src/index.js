@@ -24,6 +24,7 @@ export default class VirtualDom {
 class Element {
   constructor (velement) {
     this.props = {}
+    this.tagName = 'div' // default is div
 
     for (const vkey in velement) {
       switch (vkey) {

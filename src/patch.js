@@ -1,10 +1,15 @@
 import { diffType } from './utils/constant'
+import walkWithDebug from './utils/walk-with-debug'
 
 export default patch
 
 function patch ($dom, patches) {
   const index = { value: 0 }
-  dfsWalk($dom, index, patches)
+  if (process.env.NODE_ENV === 'debug') {
+    walkWithDebug($dom, index, patches)
+  } else {
+    dfsWalk($dom, index, patches)
+  }
 }
 
 function dfsWalk ($node, index, patches, isEnd = false) {
@@ -51,12 +56,16 @@ function dfsWalk ($node, index, patches, isEnd = false) {
 
   if (isEnd) return
   if ($node.children.length > 0) {
+    // in case $node children will add or delete that the length will be changed
+    const cacheChildren = []
     for (let i = 0; i < $node.children.length; i++) {
+      cacheChildren.push($node.children[i])
+    }
+    for (let i = 0; i < cacheChildren.length; i++) {
       index.value++
-      dfsWalk($node.children[i], index, patches)
+      dfsWalk(cacheChildren[i], index, patches)
     }
   } else {
-    index.value++
     dfsWalk($node, index, patches, true)
   }
 }

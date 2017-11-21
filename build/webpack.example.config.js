@@ -1,4 +1,5 @@
 
+const webpack = require('webpack')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
@@ -35,7 +36,12 @@ module.exports = {
       inject: true,
       template: path.resolve(__dirname, '../example/index.html')
     }),
-    new ExtractTextPlugin('style.css')
+    new ExtractTextPlugin('style.css'),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('debug')
+      }
+    })
   ],
   resolve: {
     alias: {

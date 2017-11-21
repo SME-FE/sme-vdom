@@ -71,8 +71,6 @@ function diffProps (oldProps, newProps, index, currentIndexPatch) {
 function diffChildren (oldChildren, newChildren, index, currentIndexPatch, patches) {
   const oLen = oldChildren ? oldChildren.length : 0
   const nLen = newChildren ? newChildren.length : 0
-  console.log(oldChildren)
-  console.log(newChildren)
   if (oLen < nLen) {
     let i = 0
     for (; i < oLen; i++) {
