@@ -26,6 +26,10 @@ npm run build
 npm run build:rollup
 ```
 
+## live demo 🤓
+
+[demooooo](https://sme-fe.github.io/sme-vdom/)
+
 ## example 👾
 
 ```js
