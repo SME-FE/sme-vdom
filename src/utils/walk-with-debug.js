@@ -2,6 +2,7 @@ import { diffType } from './constant'
 
 /**
  * 因为是测试用的，所以就全部写在一个文件了。。。。。
+ * just for debug 🤔
  * debugger example utils
  */
 const logSome = (info) => {
@@ -9,13 +10,17 @@ const logSome = (info) => {
 }
 
 const shakingMeee = [
-  'Sadly I will be removed by tree shaking...',
-  'TAT',
-  'QAQ',
-  'TUT',
-  'QvQ'
+  ' Sadly I will be removed by tree shaking...',
+  ' TAT',
+  ' QAQ',
+  ' TUT',
+  ' QvQ'
 ]
 
+/**
+ * 写到 shakingMeeeeee
+ * 不知为什么想到红警2谭雅的配音，笑哭😂
+ */
 logSome(shakingMeee.join(', '))
 
 const typeDescription = {
@@ -152,8 +157,4 @@ function dfsWalk ($node, index, patches, isEnd = false) {
   } else {
     dfsWalk($node, index, patches, true)
   }
-}
-
-function markActiveNode($node, type) {
-  $node.setAttribute()
 }

@@ -60,7 +60,7 @@
               },
               {
                 tag: 'footer', // 7
-                text: '@power by hwen <hwenleung@gmail.com>'
+                text: '@power by hwen &lt;hwenleung@gmail.com&gt;'
               }
             ]
           }
@@ -77,13 +77,13 @@
               {
                 tag: 'h1',
                 className: 'header',
-                style: 'color: #7d7df1; padding-left: 16px;',
-                text: 'Hii ~'
+                style: <code class="highlight">'color: #7d7df1; padding-left: 16px;'</code>,
+                text: <code class="highlight">'Hii ~'</code>
               },
               {
                 tag: 'section',
                 className: 'content',
-                style: 'color: #606c76;  padding-left: 16px;',
+                style: <code class="highlight">'color: #606c76; padding-left: 16px; font-weight: bold;'</code>,
                 text: 'Hallo, vdom content ~~',
                 children: [
                   {
@@ -94,19 +94,21 @@
                   {
                     tag: 'p',
                     className: 'p2',
-                    text: 'some time nativeeee'
+                    text: <code class="highlight">'some time nativeeee'</code>
                   }
                 ]
               },
               {
                 tag: 'footer',
                 style: 'margin: 20px 16px;',
-                text: '@power by hwen <hwenleung@gmail.com>'
+                text: '@power by hwen &lt;hwenleung@gmail.com&gt;'
               },
+              <code class="highlight">
               {
                 style: 'color: #606c76;  padding-left: 16px;',
                 text: '== (○´･д･)ﾉ 暴力膜不可取 =='
               }
+              </code>
             ]
           }
         </code>

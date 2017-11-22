@@ -35,5 +35,8 @@ body {
     border-bottom: 2px dashed $purple;
     font-weight: bold;
   }
+  code.highlight {
+    color: $orange;
+  }
 }
 

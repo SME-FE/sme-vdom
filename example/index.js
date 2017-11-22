@@ -61,7 +61,7 @@ const newDom = {
     {
       tag: 'section',
       className: 'content',
-      style: 'color: #606c76;  padding-left: 16px;',
+      style: 'color: #606c76; padding-left: 16px; font-weight: bold;',
       text: 'Hallo, vdom content ~~',
       children: [
         {
@@ -82,6 +82,7 @@ const newDom = {
       text: '@power by hwen <hwenleung@gmail.com>'
     },
     {
+      // tag 可缺省，默认为 div 标签
       style: 'color: #606c76;  padding-left: 16px;',
       text: '== (○´･д･)ﾉ 暴力膜不可取 =='
     }
