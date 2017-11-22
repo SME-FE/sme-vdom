@@ -8,6 +8,7 @@
     "build": "webpack --config ./build/webpack.prod.config.js",
     "build:rollup": "rollup --config ./build/rollup.config.js",
     "build:example": "webpack --config ./build/webpack.example.config.js",
+    "build:gh": "webpack --config ./build/webpack.gh-pages.config.js",
     "dev": "webpack-dev-server --hot --inline --config ./build/webpack.example.config.js --content-base ./dist"
   },
   "author": "hwen <hwenleung@gmail.com>",
