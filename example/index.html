@@ -20,50 +20,50 @@
       <span class="title">旧DOM结构</span>
       <pre>
         <code>
-          {
-            tag: 'div', // 0
-            children: [
-              {
-                tag: 'h1', // 1
-                className: 'header',
-                style: 'color: #f36b6b; padding-left: 16px;',
-                text: 'Hi there ~'
-              },
-              {
-                tag: 'section', // 2
-                className: 'content',
-                style: 'color: #606c76; padding-left: 16px;',
-                text: 'Hallo, vdom content ~~',
-                children: [
-                  {
-                    tag: 'p', // 3
-                    className: 'p1',
-                    text: 'too young'
-                  },
-                  {
-                    tag: 'p', // 4
-                    className: 'p2',
-                    text: 'too simple'
-                  },
-                  {
-                    tag: 'p', // 5
-                    className: 'p3',
-                    style: 'color: #f36b6b;',
-                    text: '+1s +1s +1s'
-                  },
-                  {
-                    tag: 'p', // 6
-                    className: 'p4',
-                    text: 'some time nativeeee'
-                  }
-                ]
-              },
-              {
-                tag: 'footer', // 7
-                text: '@power by hwen &lt;hwenleung@gmail.com&gt;'
-              }
-            ]
-          }
+{
+  tag: 'div', // 0
+  children: [
+    {
+      tag: 'h1', // 1
+      className: 'header',
+      style: 'color: #f36b6b; padding-left: 16px;',
+      text: 'Hi there ~'
+    },
+    {
+      tag: 'section', // 2
+      className: 'content',
+      style: 'color: #606c76; padding-left: 16px;',
+      text: 'Hallo, vdom content ~~',
+      children: [
+        {
+          tag: 'p', // 3
+          className: 'p1',
+          text: 'too young'
+        },
+        {
+          tag: 'p', // 4
+          className: 'p2',
+          text: 'too simple'
+        },
+        {
+          tag: 'p', // 5
+          className: 'p3',
+          style: 'color: #f36b6b;',
+          text: '+1s +1s +1s'
+        },
+        {
+          tag: 'p', // 6
+          className: 'p4',
+          text: 'some time nativeeee'
+        }
+      ]
+    },
+    {
+      tag: 'footer', // 7
+      text: '@power by hwen &lt;hwenleung@gmail.com&gt;'
+    }
+  ]
+}
         </code>
       </pre>
     </div>
@@ -71,46 +71,46 @@
         <span class="title">新DOM结构</span>
       <pre>
         <code>
-          {
-            tag: 'div',
-            children: [
-              {
-                tag: 'h1',
-                className: 'header',
-                style: <code class="highlight">'color: #7d7df1; padding-left: 16px;'</code>,
-                text: <code class="highlight">'Hii ~'</code>
-              },
-              {
-                tag: 'section',
-                className: 'content',
-                style: <code class="highlight">'color: #606c76; padding-left: 16px; font-weight: bold;'</code>,
-                text: 'Hallo, vdom content ~~',
-                children: [
-                  {
-                    tag: 'p',
-                    className: 'p1',
-                    text: 'too young'
-                  },
-                  {
-                    tag: 'p',
-                    className: 'p2',
-                    text: <code class="highlight">'some time nativeeee'</code>
-                  }
-                ]
-              },
-              {
-                tag: 'footer',
-                style: 'margin: 20px 16px;',
-                text: '@power by hwen &lt;hwenleung@gmail.com&gt;'
-              },
-              <code class="highlight">
-              {
-                style: 'color: #606c76;  padding-left: 16px;',
-                text: '== (○´･д･)ﾉ 暴力膜不可取 =='
-              }
-              </code>
-            ]
-          }
+{
+  tag: 'div',
+  children: [
+    {
+      tag: 'h1',
+      className: 'header',
+      style: <code class="highlight">'color: #7d7df1; padding-left: 16px;'</code>,
+      text: <code class="highlight">'Hii ~'</code>
+    },
+    {
+      tag: 'section',
+      className: 'content',
+      style: <code class="highlight">'color: #606c76; padding-left: 16px; font-weight: bold;'</code>,
+      text: 'Hallo, vdom content ~~',
+      children: [
+        {
+          tag: 'p',
+          className: 'p1',
+          text: 'too young'
+        },
+        {
+          tag: 'p',
+          className: 'p2',
+          text: <code class="highlight">'some time nativeeee'</code>
+        }
+      ]
+    },
+    {
+      tag: 'footer',
+      style: 'margin: 20px 16px;',
+      text: '@power by hwen &lt;hwenleung@gmail.com&gt;'
+    },
+    <code class="highlight">
+    {
+      style: 'color: #606c76;  padding-left: 16px;',
+      text: '== (○´･д･)ﾉ 暴力膜不可取 =='
+    }
+    </code>
+  ]
+}
         </code>
       </pre>
     </div>
