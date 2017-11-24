@@ -48,8 +48,7 @@ class Element {
       this.children = this.children.map(child => {
         return new Element(child)
       })
-    }
-   
+    }   
     this.key = this.props.key || void 0
   }
 

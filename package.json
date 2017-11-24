@@ -1,15 +1,30 @@
 {
   "name": "sme-vdom",
-  "version": "1.0.0",
+  "version": "0.12.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ext .js src example build",
     "build": "webpack --config ./build/webpack.prod.config.js",
     "build:rollup": "rollup --config ./build/rollup.config.js",
+    "build:pub": "webpack --config ./build/webpack.publish.config.js",
     "build:example": "webpack --config ./build/webpack.example.config.js",
     "build:gh": "webpack --config ./build/webpack.gh-pages.config.js",
     "dev": "webpack-dev-server --hot --inline --config ./build/webpack.example.config.js --content-base ./dist"
+  },
+  "keywords": [
+    "vdom",
+    "virtual dom",
+    "simple vdom",
+    "sme-vdom",
+    "sme"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SME-FE/sme-vdom"
+  },
+  "bugs": {
+    "url": "https://github.com/SME-FE/sme-vdom/issues"
   },
   "author": "hwen <hwenleung@gmail.com>",
   "license": "MIT",

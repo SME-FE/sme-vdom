@@ -17,11 +17,13 @@ const shakingMeee = [
   ' QvQ'
 ]
 
-/**
- * 写到 shakingMeeeeee
- * 不知为什么想到红警2谭雅的配音，笑哭😂
- */
-logSome(shakingMeee.join(', '))
+if (process.env.NODE_ENV === 'debug') {
+  /**
+   * 写到 shakingMeeeeee
+   * 不知为什么想到红警2谭雅的配音，笑哭😂
+   */
+  logSome(shakingMeee.join(', '))
+}
 
 const typeDescription = {
   NODE_DELETE: '删除节点',

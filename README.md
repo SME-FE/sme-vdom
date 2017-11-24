@@ -2,37 +2,17 @@
 
 a simple virtual dom lib
 
-## start 🤕
+## start 👾
 
-```s
-npm i
-```
+- install
 
-```s
-npm run dev
-```
+`npm i sme-vdom`
 
-open `http://localhost:8080/`
-
-- build with webpack
-
-```s
-npm run build
-```
-
-- build with rollup
-
-```s
-npm run build:rollup
-```
-
-## live demo 🤓
-
-[demooooo](https://sme-fe.github.io/sme-vdom/)
-
-## example 👾
+- usage
 
 ```js
+import VirtualDom from 'sme-vdom'
+
 const newDom = {
   tag: 'div',
   children: [
@@ -77,6 +57,34 @@ const tree = new VirtualDom(newDom)
 const $dom = tree.render()
 const $app = document.querySelector('#app')
 $app.replaceWith($dom)
+```
+
+## live demo 🤓
+
+[demooooo](https://sme-fe.github.io/sme-vdom/)
+
+## develop 🤕
+
+```s
+npm i
+```
+
+```s
+npm run dev
+```
+
+open `http://localhost:8080/`
+
+- build with webpack
+
+```s
+npm run build
+```
+
+- build with rollup
+
+```s
+npm run build:rollup
 ```
 
 ## refrence 🐱‍
