@@ -90,3 +90,12 @@ npm run build:rollup
 ## refrence 🐱‍
 
 inspired by [simple-virtual-dom](https://github.com/livoras/simple-virtual-dom)
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars3.githubusercontent.com/u/6712767?v=4" width="100px;"/><br /><sub>hwen</sub>](https://github.com/hwen)<br />[🤔](#ideas "Ideas & Planning") [💻](https://github.com/SME-FE/sme-vdom/commits?author=hwen "Code") [🎨](#design "Design") [📖](https://github.com/SME-FE/sme-vdom/commits?author=hwen "Documentation") [💡](#example "Examples") |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
